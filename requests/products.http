@@ -1,0 +1,51 @@
+@api = http://localhost:14666/api
+
+{{api}}
+
+### add a product
+POST {{api}}/products
+Content-Type: application/json
+
+{
+    "name": "product 2",
+   "description": "some product",
+   "quantity": 10
+}
+
+### get product
+{{api}}/10
+
+### delete product 
+DELETE {{api}}/10
+
+### get count
+{{api}}/count
+
+### update
+PUT {{api}}/11
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "description": "some laptop",
+    "quantity": 20
+}
+
+### get users
+
+GET {{api}}/users
+
+### add new user
+
+POST {{api}}/users
+Content-Type: application/json
+
+{   
+   "usrcodigo":"user006",
+    "usrnombre":"waiter", 
+    "usrclave":"waiter", 
+    "usrusuisys":"clopez", 
+    "usrusumsys":"clopez", 
+    "usremail":"eespinoza", 
+    "usrestisys":"eespinoza"
+}
